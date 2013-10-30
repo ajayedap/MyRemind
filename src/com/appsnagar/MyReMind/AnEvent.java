@@ -23,7 +23,7 @@ public class AnEvent {
 	}
 	public boolean isEligible(String curTime){
 		boolean eligibility=false;
-		//Log.i("AnEvent:",theEvent[4]+"="+curTime);
+		//Log.i("AnEvent:",theEvent[4]+"="+curTime);//
 		//after all, event_at must be atleast old than the curTime 
 		//if((MRM.getTimeMillis(curTime)-MRM.getTimeMillis(theEvent[MRM.C_EVENT_AT])) >= 00){
 		if(MRM.getTimeMillis(theEvent[MRM.C_EVENT_AT]) > MRM.getTimeMillis(curTime))
