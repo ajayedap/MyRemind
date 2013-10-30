@@ -183,7 +183,7 @@ public class MyReMindApp extends Application {
 			Log.i("AddEventScreen", "starting the CheckerService");
 			Intent intent = new Intent(this, CheckerService.class);
 			long firstTime = SystemClock.elapsedRealtime();
-			PendingIntent pendingIntent = PendingIntent.getService(this, -1,
+			PendingIntent  pendingIntent = PendingIntent.getService(this, -1,
 					intent, PendingIntent.FLAG_UPDATE_CURRENT);
 			AlarmManager alarmManager = (AlarmManager) this
 					.getSystemService(Context.ALARM_SERVICE);
